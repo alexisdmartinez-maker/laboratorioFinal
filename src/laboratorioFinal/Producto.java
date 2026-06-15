@@ -37,4 +37,14 @@ public class Producto {
 	        return "Empleado [idEmpleado=" + idEmpleado + ", nombre=" + nombre + ", cargo=" + cargo + "]";
 	    }
 	}
+
+	public int getPrecioVenta() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String getNombre() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
