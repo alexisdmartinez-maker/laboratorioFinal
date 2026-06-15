@@ -1,5 +1,5 @@
 package laboratorioFinal;
 
-public class ALEXIS {
+public class Categoria {
 
 }

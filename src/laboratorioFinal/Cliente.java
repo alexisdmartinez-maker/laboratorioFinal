@@ -1,5 +1,5 @@
 package laboratorioFinal;
 
-public class ANDRES {
+public class Cliente {
 
 }

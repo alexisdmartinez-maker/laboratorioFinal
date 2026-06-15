@@ -1,5 +1,5 @@
 package laboratorioFinal;
 
-public class FRANKLI {
+public class Empleados {
 
 }
