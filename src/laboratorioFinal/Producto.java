@@ -1,45 +1,40 @@
 package laboratorioFinal;
 
 public class Producto {
-	  private int idProducto;
+	public class Empleado {
+	    private int idEmpleado;
 	    private String nombre;
-	    private double precioCompra;
-	    private double precioVenta;
-	    private int cantidadMax;
-	    private int cantidadMin;
-	    private Categoria categoria;
+	    private String cargo;
+	    private String direccion;
+	    private String fechaIngreso;
+	    private String horarioEntrada;
+	    private String horarioSalida;
 
-	    public Producto(int id, String nombre, double pC, double pV, Categoria cat) {
-	        this.idProducto = id;
+	    public Empleado(int id, String nombre, String cargo) {
+	        this.idEmpleado = id;
 	        this.nombre = nombre;
-	        this.precioCompra = pC;
-	        this.precioVenta = pV;
-	        this.categoria = cat;
+	        this.cargo = cargo;
 	    }
 
-	    public int getIdProducto() { return idProducto; }
-	    public void setIdProducto(int id) { this.idProducto = id; }
+	    public int getIdEmpleado() { return idEmpleado; }
+	    public void setIdEmpleado(int id) { this.idEmpleado = id; }
 
 	    public String getNombre() { return nombre; }
 	    public void setNombre(String nombre) { this.nombre = nombre; }
 
-	    public double getPrecioCompra() { return precioCompra; }
-	    public void setPrecioCompra(double precio) { this.precioCompra = precio; }
+	    public String getCargo() { return cargo; }
+	    public void setCargo(String cargo) { this.cargo = cargo; }
 
-	    public double getPrecioVenta() { return precioVenta; }
-	    public void setPrecioVenta(double precio) { this.precioVenta = precio; }
+	    public String getDireccion() { return direccion; }
+	    public void setDireccion(String dir) { this.direccion = dir; }
 
-	    public int getCantidadMax() { return cantidadMax; }
-	    public void setCantidadMax(int cant) { this.cantidadMax = cant; }
-
-	    public int getCantidadMin() { return cantidadMin; }
-	    public void setCantidadMin(int cant) { this.cantidadMin = cant; }
-
-	    public Categoria getCategoria() { return categoria; }
-	    public void setCategoria(Categoria cat) { this.categoria = cat; }
+	    public String getFechaIngreso() { return fechaIngreso; }
+	    public String getHorarioEntrada() { return horarioEntrada; }
+	    public String getHorarioSalida() { return horarioSalida; }
 
 	    @Override
 	    public String toString() {
-	        return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", precioVenta=" + precioVenta + "]";
+	        return "Empleado [idEmpleado=" + idEmpleado + ", nombre=" + nombre + ", cargo=" + cargo + "]";
 	    }
 	}
+}
