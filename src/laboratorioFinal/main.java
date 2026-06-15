@@ -1,7 +1,7 @@
 package laboratorioFinal;
 import java.util.Scanner;
 
-public class Main {
+public class main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -36,7 +36,7 @@ public class Main {
         System.out.print("ID: "); int id = sc.nextInt(); sc.nextLine();
         System.out.print("Nombre: "); String nombre = sc.nextLine();
         System.out.print("Teléfono: "); String tel = sc.nextLine();
-        return new Cliente(id, nombre, tel);
+        return new Cliente();
     }
 
     public static Empleados registrarEmpleado(Scanner sc) {
@@ -44,14 +44,14 @@ public class Main {
         System.out.print("ID: "); int id = sc.nextInt(); sc.nextLine();
         System.out.print("Nombre: "); String nombre = sc.nextLine();
         System.out.print("Cargo: "); String cargo = sc.nextLine();
-        return new Empleados (id, nombre, cargo);
+        return new Empleados ();
     }
 
     public static Categoria registrarCategoria(Scanner sc) {
         System.out.println("\n--- DATOS DE CATEGORÍA ---");
         System.out.print("ID: "); int id = sc.nextInt(); sc.nextLine();
         System.out.print("Nombre: "); String nombre = sc.nextLine();
-        return new Categoria(id, nombre);
+        return new Categoria();
     }
 
     public static Producto registrarProducto(Scanner sc, Categoria cat) {
@@ -60,7 +60,7 @@ public class Main {
         System.out.print("Nombre: "); String nombre = sc.nextLine();
         System.out.print("Precio Compra: $"); double pC = sc.nextDouble();
         System.out.print("Precio Venta: $"); double pV = sc.nextDouble(); sc.nextLine();
-        return new Producto(id, nombre, pC, pV, cat);
+        return new Producto();
     }
 
     public static Venta registrarVenta(Scanner sc, Cliente cli, Empleados emp) {
