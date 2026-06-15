@@ -1,5 +1,7 @@
 package laboratorioFinal;
 import java.util.ArrayList;
+
+import laboratorioFinal.Empleados.Empleado;
 public class Venta {
 	
 	    private int idVenta;
