@@ -6,10 +6,10 @@ public class Venta {
 	    private String fecha;
 	    private double total;
 	    private Cliente cliente;
-	    private Empleado empleado;
+	    private Empleados empleado;
 	    private ArrayList<DetalleVenta> detalles;
 
-	    public Venta(int id, String fecha, Cliente cli, Empleado emp) {
+	    public Venta(int id, String fecha, Cliente cli, Empleados emp) {
 	        this.idVenta = id;
 	        this.fecha = fecha;
 	        this.cliente = cli;
@@ -26,8 +26,8 @@ public class Venta {
 	    public Cliente getCliente() { return cliente; }
 	    public void setCliente(Cliente cli) { this.cliente = cli; }
 
-	    public Empleado getEmpleado() { return empleado; }
-	    public void setEmpleado(Empleado emp) { this.empleado = emp; }
+	    public Empleados getEmpleado() { return empleado; }
+	    public void setEmpleado(Empleados emp) { this.empleado = emp; }
 
 	    public void agregarDetalle(DetalleVenta det) {
 	        this.detalles.add(det);
